@@ -1,4 +1,4 @@
-project('jsont-cpp', ['c','cpp'], default_options : ['cpp_std=gnu++2a'])
+project('jsont', ['c','cpp'], default_options : ['cpp_std=gnu++2a'])
 
 # cmake = import('cmake')
 
@@ -15,5 +15,5 @@ cpp_warning_flags = [
 
 subdir('src')
 
-# subdir('tests')
+subdir('tests')
 
