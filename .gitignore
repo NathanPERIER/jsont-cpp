@@ -4,6 +4,7 @@
 
 # Cloned subprojects and sub-subprojects
 /subprojects/*
+!/subprojects/nlohmann_json.wrap
 
 # VSCode
 /.vscode

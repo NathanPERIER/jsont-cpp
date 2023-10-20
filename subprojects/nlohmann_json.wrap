@@ -1,0 +1,7 @@
+[wrap-git]
+url = https://github.com/nlohmann/json.git
+revision = v3.11.2
+depth = 1
+
+[provide]
+jsont_cpp_dep = jsont_cpp_static
