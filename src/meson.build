@@ -14,20 +14,12 @@ sources = [
 headers_dir = include_directories('../lib')
 
 
-executable('jsont-cpp', ['main.cc', sources], dependencies: [],
-           cpp_args: [cpp_flags],
-           link_args: [l_args],
-           include_directories: headers_dir,
-           install: false,
-           build_by_default: true)
-
-
-# jsont_lib = static_library('jsont_static', sources, dependencies: [],
+# jsont_lib = static_library('jsont_static', sources, dependencies: [nlohmann_json_proj],
 #                            cpp_args: [cpp_flags],
 #                            link_args: [l_args],
 #                            include_directories: headers_dir,
 #                            install: false,
 #                            build_by_default: true)
 
-jsont_dep = declare_dependency(include_directories : headers_dir)
+jsont_dep = declare_dependency(include_directories: headers_dir, dependencies: [nlohmann_json_dep])
 # link_with : jsont_lib ?
