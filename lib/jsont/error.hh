@@ -4,6 +4,7 @@
 #include <string>
 #include <exception>
 
+
 namespace jsont {
 
 class json_exception: public std::exception {
